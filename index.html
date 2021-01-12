@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+        <link rel="manifest" href="./favicon/site.webmanifest">
+        <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#212d40">
+        <link rel="shortcut icon" href="./favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="./favicon/browserconfig.xml">
+        <meta name="theme-color" content="#D66853">
+        <title>Chifoumy</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body id="body">
+        <div id="flexBox">
+            <header>
+                <h1 id="h1">Chifoumy</h1>
+            </header>
+            <main>
+                <section id="home">
+                    <h2>Bienvenue :</h2>
+                    <form action="#">
+                        <input type="text" name="pseudo" minlength="2" required placeholder="Définissez votre pseudo">
+                        <button type="submit">Jouer !</button>
+                    </form>
+                </section>
+                <section id="game" class="hidden">
+                    <article id="computerGame">
+                        <div>
+                            <p>A toi de jouer !</p>
+                        </div>
+                    </article>
+                    <article id="scores">
+                        <span id="userPseudo"></span> : <span id="humanScore">0</span> | <span id="machinScore">0</span> : Ordinateur 
+                    </article>
+                    <article id="gamePlay">
+                        <ul>
+                            <li><button type="button" data-game="pierre"><img src="./img/pierre.png" alt="Pierre"></button></li>
+                            <li><button type="button" data-game="feuille"><img src="./img/feuille.png" alt="Feuille"></button></li>
+                            <li><button type="button" data-game="ciseaux"><img src="./img/ciseaux.png" alt="Ciseaux"></button></li>
+                        </ul>
+                    </article>
+                </section>
+            </main>
+            <footer id="footer" class="">
+                <div>
+                    <p>Comment jouer à pierre papier ciseaux ?</p>
+                    <p>Les règles du jeu sont vraiment très simples et vous n’avez besoin de rien pour jouer, si ce n’est que vos mains. Comme il existe plusieurs variantes je vais vous présenter les règles de la version classique du shifumi qui se joue à 2 joueurs. A l’aide de vos mains vous aurez la possibilité de choisir entre 3 signes : la pierre, le papier ou les ciseaux.</p>
+                    <ol>
+                        <li>Les 2 joueurs doivent placer leurs mains dans le dos</li>
+                        <li>Prononcez Shi Fu Mi (se prononce Chi Fou Mi) ou comptez jusqu’à 3</li>
+                        <li>Dévoilez votre choix en réalisant le signe avec votre main</li>
+                    </ol>
+                    <p>&copy; 2020-2021 Under WTFPL</p>
+                </div>
+            </footer>
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

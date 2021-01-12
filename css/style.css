@@ -1,0 +1,367 @@
+/**** RESET *******/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.6rem;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/**** ROOT *******/
+/***** GLOBAL ****/
+body {
+  background-color: #212D40;
+}
+
+#flexBox, #game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/****** HEADER *****/
+header {
+  height: 5rem;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 3.5rem;
+  position: relative;
+  margin-left: 10%;
+  color: #fff;
+}
+
+header h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10%;
+  width: 120%;
+  height: 110%;
+  background-color: #D66853;
+  z-index: -1;
+  border-radius: 0 0 9px 9px;
+}
+
+/****** MAIN *****/
+main {
+  height: calc(100vh - 5rem);
+  padding-bottom: 6rem;
+  overflow: hidden !important;
+}
+
+main #home {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #home img {
+  width: 20px;
+  position: absolute;
+}
+
+main #home img#float1 {
+  top: 10%;
+  width: 200px;
+  right: 0%;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+main #home img#float2 {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  bottom: 10%;
+  width: 100px;
+  left: 10%;
+  -webkit-filter: blur(2.5px);
+          filter: blur(2.5px);
+}
+
+main #home img#float3 {
+  bottom: 35%;
+  width: 40px;
+  right: 5%;
+  -webkit-filter: blur(0.5px);
+          filter: blur(0.5px);
+}
+
+main #home h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+main #home form {
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 300px;
+  margin-top: 4rem;
+}
+
+main #home form input {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: none;
+  border-bottom: 2px solid #D66853;
+  padding: .7rem 1.2rem;
+  background-color: #11151C;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  outline: none;
+  margin-bottom: 1.2rem;
+}
+
+main #home form button {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: none;
+  padding: .7rem 1.2rem;
+  background-color: #11151C;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+}
+
+main #home form button:hover, main #home form button:active, main #home form button:focus {
+  background-color: #D66853;
+}
+
+main #game #computerGame {
+  height: calc(100vh - (44px + 130px + 5rem + 6rem + 4rem));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #game #computerGame p {
+  font-size: 4.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+main #game #computerGame p.win {
+  color: #28a745 !important;
+}
+
+main #game #computerGame p.lose {
+  color: #aa0f0f !important;
+}
+
+main #game #computerGame #result {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main #game #computerGame #result div {
+  margin: 5rem 0 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+main #game #computerGame #result div img {
+  height: 70%;
+  margin: auto;
+}
+
+main #game #computerGame #playAgain {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: none;
+  padding: 1rem 1.7rem;
+  background-color: #fff;
+  color: #11151C;
+  font-size: 2rem;
+  border-radius: 4px;
+  outline: none;
+}
+
+main #game #computerGame #playAgain:hover, main #game #computerGame #playAgain:active, main #game #computerGame #playAgain:focus {
+  background-color: #D66853;
+}
+
+main #game #gamePlay {
+  margin-top: 3rem;
+}
+
+main #game #gamePlay ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+main #game #gamePlay ul li:first-child button img {
+  height: 60%;
+}
+
+main #game #gamePlay ul li button {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+main #game #gamePlay ul li button img {
+  height: 75%;
+  margin: auto;
+}
+
+main #game #scores {
+  margin: 1rem 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+main #game #scores #humanScore,
+main #game #scores #machinScore {
+  padding: .5rem 1rem;
+  background-color: #fff;
+  color: #11151C;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+/****** FOOTER *****/
+footer {
+  position: relative;
+  background-color: #364156;
+  color: #fff;
+  padding: 2.2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  z-index: 1000;
+}
+
+footer.open {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+footer::before {
+  content: "Regles de jeux";
+  cursor: pointer;
+  color: #fff;
+  padding: 1.5rem 0;
+  background-color: inherit;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  border-radius: 22px 22px 0 0;
+  top: -65px;
+  left: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.2rem;
+  z-index: -1;
+}
+
+footer p {
+  margin-bottom: 2rem;
+}
+
+footer p:nth-child(1) {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+footer p:nth-child(4) {
+  opacity: .3;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+footer ol {
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
