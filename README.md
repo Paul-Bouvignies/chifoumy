@@ -13,5 +13,4 @@ Pour rendre téléchargeable ce "jeux" la PWA est disponible.
  - PWA
 
 
-
-[DEMO](https://www.paulbouvignies.fr/ressources/F1-RACE-CLASSIFICATION/index.html)
+[![DEMO](https://img.shields.io/badge/Portfolio-yellow.svg?&style=for-the-badge)](https://www.paulbouvignies.fr/ressources/F1-RACE-CLASSIFICATION/index.html)
